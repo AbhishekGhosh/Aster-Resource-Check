@@ -5,11 +5,7 @@ A tiny, read-only Linux VPS resource checker. Python 3.9+ (tested on 3.9–3.13)
 ## Usage
 
 ```bash
-wget https://github.com/AbhishekGhosh/Aster-Resource-Check/archive/refs/tags/v1.0.zip
-# apt install unzip
-# ls
-# unzip v1.0.zip
-# ls && cd
+wget https://raw.githubusercontent.com/AbhishekGhosh/Aster-Resource-Check/refs/heads/main/resource_check.py
 python3 resource_check.py
 python3 resource_check.py --json
 python3 resource_check.py --path /srv --memory-warn 80 --disk-warn 90 --load-warn 1.5
