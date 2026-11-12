@@ -1,0 +1,288 @@
+Aster Resource Check v0.1 (reviewed) — test results
+Generated: 2026-11-12T17:54:07Z on Ubuntu 24.04.5 LTS, kernel 6.18.44-fc-v378, 2 vCPU
+Run from a fresh extraction of aster-resource-check-v0.1-reviewed.zip
+
+############ 1. Unit tests on CPython 3.8–3.13 (python -B -m unittest discover -s tests -v)
+
+===== CPython 3.8.20 =====
+test_accepts_boundary_thresholds (test_resource_check.CliTests) ... ok
+test_exit_0_when_healthy (test_resource_check.CliTests) ... ok
+test_exit_1_when_threshold_exceeded (test_resource_check.CliTests) ... ok
+test_json_output (test_resource_check.CliTests) ... ok
+test_output_write_failure_is_exit_2 (test_resource_check.CliTests) ... ok
+test_rejects_invalid_thresholds (test_resource_check.CliTests) ... ok
+test_text_output_without_swap_or_size (test_resource_check.CliTests) ... ok
+test_threshold_is_inclusive (test_resource_check.EvaluateTests) ... ok
+test_unknown_values_never_warn (test_resource_check.EvaluateTests) ... ok
+test_live_cli (test_resource_check.LinuxSmokeTests) ... ok
+test_live_snapshot_is_sane (test_resource_check.LinuxSmokeTests) ... ok
+test_missing_path_is_exit_2 (test_resource_check.LinuxSmokeTests) ... ok
+test_units_and_malformed_lines (test_resource_check.MeminfoParsingTests) ... ok
+test_load_warning (test_resource_check.ResourceCheckTests) ... ok
+test_meminfo (test_resource_check.ResourceCheckTests) ... ok
+test_percent (test_resource_check.ResourceCheckTests) ... ok
+test_unsupported_path (test_resource_check.ResourceCheckTests) ... ok
+test_warning_thresholds (test_resource_check.ResourceCheckTests) ... ok
+test_available_never_exceeds_total (test_resource_check.SnapshotMathTests) ... ok
+test_disk_percent_matches_df_with_reserved_blocks (test_resource_check.SnapshotMathTests) ... ok
+test_load_per_core (test_resource_check.SnapshotMathTests) ... ok
+test_memory_fallback_treats_cache_as_available (test_resource_check.SnapshotMathTests) ... ok
+test_memory_uses_memavailable (test_resource_check.SnapshotMathTests) ... ok
+test_missing_memtotal_is_an_error (test_resource_check.SnapshotMathTests) ... ok
+test_no_swap (test_resource_check.SnapshotMathTests) ... ok
+test_unknown_cpu_count_falls_back_to_one (test_resource_check.SnapshotMathTests) ... ok
+test_zero_size_filesystem (test_resource_check.SnapshotMathTests) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.036s
+
+OK
+
+===== CPython 3.9.25 =====
+test_accepts_boundary_thresholds (test_resource_check.CliTests) ... ok
+test_exit_0_when_healthy (test_resource_check.CliTests) ... ok
+test_exit_1_when_threshold_exceeded (test_resource_check.CliTests) ... ok
+test_json_output (test_resource_check.CliTests) ... ok
+test_output_write_failure_is_exit_2 (test_resource_check.CliTests) ... ok
+test_rejects_invalid_thresholds (test_resource_check.CliTests) ... ok
+test_text_output_without_swap_or_size (test_resource_check.CliTests) ... ok
+test_threshold_is_inclusive (test_resource_check.EvaluateTests) ... ok
+test_unknown_values_never_warn (test_resource_check.EvaluateTests) ... ok
+test_live_cli (test_resource_check.LinuxSmokeTests) ... ok
+test_live_snapshot_is_sane (test_resource_check.LinuxSmokeTests) ... ok
+test_missing_path_is_exit_2 (test_resource_check.LinuxSmokeTests) ... ok
+test_units_and_malformed_lines (test_resource_check.MeminfoParsingTests) ... ok
+test_load_warning (test_resource_check.ResourceCheckTests) ... ok
+test_meminfo (test_resource_check.ResourceCheckTests) ... ok
+test_percent (test_resource_check.ResourceCheckTests) ... ok
+test_unsupported_path (test_resource_check.ResourceCheckTests) ... ok
+test_warning_thresholds (test_resource_check.ResourceCheckTests) ... ok
+test_available_never_exceeds_total (test_resource_check.SnapshotMathTests) ... ok
+test_disk_percent_matches_df_with_reserved_blocks (test_resource_check.SnapshotMathTests) ... ok
+test_load_per_core (test_resource_check.SnapshotMathTests) ... ok
+test_memory_fallback_treats_cache_as_available (test_resource_check.SnapshotMathTests) ... ok
+test_memory_uses_memavailable (test_resource_check.SnapshotMathTests) ... ok
+test_missing_memtotal_is_an_error (test_resource_check.SnapshotMathTests) ... ok
+test_no_swap (test_resource_check.SnapshotMathTests) ... ok
+test_unknown_cpu_count_falls_back_to_one (test_resource_check.SnapshotMathTests) ... ok
+test_zero_size_filesystem (test_resource_check.SnapshotMathTests) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.026s
+
+OK
+
+===== CPython 3.10.20 =====
+test_accepts_boundary_thresholds (test_resource_check.CliTests) ... ok
+test_exit_0_when_healthy (test_resource_check.CliTests) ... ok
+test_exit_1_when_threshold_exceeded (test_resource_check.CliTests) ... ok
+test_json_output (test_resource_check.CliTests) ... ok
+test_output_write_failure_is_exit_2 (test_resource_check.CliTests) ... ok
+test_rejects_invalid_thresholds (test_resource_check.CliTests) ... ok
+test_text_output_without_swap_or_size (test_resource_check.CliTests) ... ok
+test_threshold_is_inclusive (test_resource_check.EvaluateTests) ... ok
+test_unknown_values_never_warn (test_resource_check.EvaluateTests) ... ok
+test_live_cli (test_resource_check.LinuxSmokeTests) ... ok
+test_live_snapshot_is_sane (test_resource_check.LinuxSmokeTests) ... ok
+test_missing_path_is_exit_2 (test_resource_check.LinuxSmokeTests) ... ok
+test_units_and_malformed_lines (test_resource_check.MeminfoParsingTests) ... ok
+test_load_warning (test_resource_check.ResourceCheckTests) ... ok
+test_meminfo (test_resource_check.ResourceCheckTests) ... ok
+test_percent (test_resource_check.ResourceCheckTests) ... ok
+test_unsupported_path (test_resource_check.ResourceCheckTests) ... ok
+test_warning_thresholds (test_resource_check.ResourceCheckTests) ... ok
+test_available_never_exceeds_total (test_resource_check.SnapshotMathTests) ... ok
+test_disk_percent_matches_df_with_reserved_blocks (test_resource_check.SnapshotMathTests) ... ok
+test_load_per_core (test_resource_check.SnapshotMathTests) ... ok
+test_memory_fallback_treats_cache_as_available (test_resource_check.SnapshotMathTests) ... ok
+test_memory_uses_memavailable (test_resource_check.SnapshotMathTests) ... ok
+test_missing_memtotal_is_an_error (test_resource_check.SnapshotMathTests) ... ok
+test_no_swap (test_resource_check.SnapshotMathTests) ... ok
+test_unknown_cpu_count_falls_back_to_one (test_resource_check.SnapshotMathTests) ... ok
+test_zero_size_filesystem (test_resource_check.SnapshotMathTests) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.024s
+
+OK
+
+===== CPython 3.11.18 =====
+test_accepts_boundary_thresholds (test_resource_check.CliTests.test_accepts_boundary_thresholds) ... ok
+test_exit_0_when_healthy (test_resource_check.CliTests.test_exit_0_when_healthy) ... ok
+test_exit_1_when_threshold_exceeded (test_resource_check.CliTests.test_exit_1_when_threshold_exceeded) ... ok
+test_json_output (test_resource_check.CliTests.test_json_output) ... ok
+test_output_write_failure_is_exit_2 (test_resource_check.CliTests.test_output_write_failure_is_exit_2) ... ok
+test_rejects_invalid_thresholds (test_resource_check.CliTests.test_rejects_invalid_thresholds) ... ok
+test_text_output_without_swap_or_size (test_resource_check.CliTests.test_text_output_without_swap_or_size) ... ok
+test_threshold_is_inclusive (test_resource_check.EvaluateTests.test_threshold_is_inclusive) ... ok
+test_unknown_values_never_warn (test_resource_check.EvaluateTests.test_unknown_values_never_warn) ... ok
+test_live_cli (test_resource_check.LinuxSmokeTests.test_live_cli) ... ok
+test_live_snapshot_is_sane (test_resource_check.LinuxSmokeTests.test_live_snapshot_is_sane) ... ok
+test_missing_path_is_exit_2 (test_resource_check.LinuxSmokeTests.test_missing_path_is_exit_2) ... ok
+test_units_and_malformed_lines (test_resource_check.MeminfoParsingTests.test_units_and_malformed_lines) ... ok
+test_load_warning (test_resource_check.ResourceCheckTests.test_load_warning) ... ok
+test_meminfo (test_resource_check.ResourceCheckTests.test_meminfo) ... ok
+test_percent (test_resource_check.ResourceCheckTests.test_percent) ... ok
+test_unsupported_path (test_resource_check.ResourceCheckTests.test_unsupported_path) ... ok
+test_warning_thresholds (test_resource_check.ResourceCheckTests.test_warning_thresholds) ... ok
+test_available_never_exceeds_total (test_resource_check.SnapshotMathTests.test_available_never_exceeds_total) ... ok
+test_disk_percent_matches_df_with_reserved_blocks (test_resource_check.SnapshotMathTests.test_disk_percent_matches_df_with_reserved_blocks) ... ok
+test_load_per_core (test_resource_check.SnapshotMathTests.test_load_per_core) ... ok
+test_memory_fallback_treats_cache_as_available (test_resource_check.SnapshotMathTests.test_memory_fallback_treats_cache_as_available) ... ok
+test_memory_uses_memavailable (test_resource_check.SnapshotMathTests.test_memory_uses_memavailable) ... ok
+test_missing_memtotal_is_an_error (test_resource_check.SnapshotMathTests.test_missing_memtotal_is_an_error) ... ok
+test_no_swap (test_resource_check.SnapshotMathTests.test_no_swap) ... ok
+test_unknown_cpu_count_falls_back_to_one (test_resource_check.SnapshotMathTests.test_unknown_cpu_count_falls_back_to_one) ... ok
+test_zero_size_filesystem (test_resource_check.SnapshotMathTests.test_zero_size_filesystem) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.022s
+
+OK
+
+===== CPython 3.12.3 =====
+test_accepts_boundary_thresholds (test_resource_check.CliTests.test_accepts_boundary_thresholds) ... ok
+test_exit_0_when_healthy (test_resource_check.CliTests.test_exit_0_when_healthy) ... ok
+test_exit_1_when_threshold_exceeded (test_resource_check.CliTests.test_exit_1_when_threshold_exceeded) ... ok
+test_json_output (test_resource_check.CliTests.test_json_output) ... ok
+test_output_write_failure_is_exit_2 (test_resource_check.CliTests.test_output_write_failure_is_exit_2) ... ok
+test_rejects_invalid_thresholds (test_resource_check.CliTests.test_rejects_invalid_thresholds) ... ok
+test_text_output_without_swap_or_size (test_resource_check.CliTests.test_text_output_without_swap_or_size) ... ok
+test_threshold_is_inclusive (test_resource_check.EvaluateTests.test_threshold_is_inclusive) ... ok
+test_unknown_values_never_warn (test_resource_check.EvaluateTests.test_unknown_values_never_warn) ... ok
+test_live_cli (test_resource_check.LinuxSmokeTests.test_live_cli) ... ok
+test_live_snapshot_is_sane (test_resource_check.LinuxSmokeTests.test_live_snapshot_is_sane) ... ok
+test_missing_path_is_exit_2 (test_resource_check.LinuxSmokeTests.test_missing_path_is_exit_2) ... ok
+test_units_and_malformed_lines (test_resource_check.MeminfoParsingTests.test_units_and_malformed_lines) ... ok
+test_load_warning (test_resource_check.ResourceCheckTests.test_load_warning) ... ok
+test_meminfo (test_resource_check.ResourceCheckTests.test_meminfo) ... ok
+test_percent (test_resource_check.ResourceCheckTests.test_percent) ... ok
+test_unsupported_path (test_resource_check.ResourceCheckTests.test_unsupported_path) ... ok
+test_warning_thresholds (test_resource_check.ResourceCheckTests.test_warning_thresholds) ... ok
+test_available_never_exceeds_total (test_resource_check.SnapshotMathTests.test_available_never_exceeds_total) ... ok
+test_disk_percent_matches_df_with_reserved_blocks (test_resource_check.SnapshotMathTests.test_disk_percent_matches_df_with_reserved_blocks) ... ok
+test_load_per_core (test_resource_check.SnapshotMathTests.test_load_per_core) ... ok
+test_memory_fallback_treats_cache_as_available (test_resource_check.SnapshotMathTests.test_memory_fallback_treats_cache_as_available) ... ok
+test_memory_uses_memavailable (test_resource_check.SnapshotMathTests.test_memory_uses_memavailable) ... ok
+test_missing_memtotal_is_an_error (test_resource_check.SnapshotMathTests.test_missing_memtotal_is_an_error) ... ok
+test_no_swap (test_resource_check.SnapshotMathTests.test_no_swap) ... ok
+test_unknown_cpu_count_falls_back_to_one (test_resource_check.SnapshotMathTests.test_unknown_cpu_count_falls_back_to_one) ... ok
+test_zero_size_filesystem (test_resource_check.SnapshotMathTests.test_zero_size_filesystem) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.018s
+
+OK
+
+===== CPython 3.13.18 =====
+test_accepts_boundary_thresholds (test_resource_check.CliTests.test_accepts_boundary_thresholds) ... ok
+test_exit_0_when_healthy (test_resource_check.CliTests.test_exit_0_when_healthy) ... ok
+test_exit_1_when_threshold_exceeded (test_resource_check.CliTests.test_exit_1_when_threshold_exceeded) ... ok
+test_json_output (test_resource_check.CliTests.test_json_output) ... ok
+test_output_write_failure_is_exit_2 (test_resource_check.CliTests.test_output_write_failure_is_exit_2) ... ok
+test_rejects_invalid_thresholds (test_resource_check.CliTests.test_rejects_invalid_thresholds) ... ok
+test_text_output_without_swap_or_size (test_resource_check.CliTests.test_text_output_without_swap_or_size) ... ok
+test_threshold_is_inclusive (test_resource_check.EvaluateTests.test_threshold_is_inclusive) ... ok
+test_unknown_values_never_warn (test_resource_check.EvaluateTests.test_unknown_values_never_warn) ... ok
+test_live_cli (test_resource_check.LinuxSmokeTests.test_live_cli) ... ok
+test_live_snapshot_is_sane (test_resource_check.LinuxSmokeTests.test_live_snapshot_is_sane) ... ok
+test_missing_path_is_exit_2 (test_resource_check.LinuxSmokeTests.test_missing_path_is_exit_2) ... ok
+test_units_and_malformed_lines (test_resource_check.MeminfoParsingTests.test_units_and_malformed_lines) ... ok
+test_load_warning (test_resource_check.ResourceCheckTests.test_load_warning) ... ok
+test_meminfo (test_resource_check.ResourceCheckTests.test_meminfo) ... ok
+test_percent (test_resource_check.ResourceCheckTests.test_percent) ... ok
+test_unsupported_path (test_resource_check.ResourceCheckTests.test_unsupported_path) ... ok
+test_warning_thresholds (test_resource_check.ResourceCheckTests.test_warning_thresholds) ... ok
+test_available_never_exceeds_total (test_resource_check.SnapshotMathTests.test_available_never_exceeds_total) ... ok
+test_disk_percent_matches_df_with_reserved_blocks (test_resource_check.SnapshotMathTests.test_disk_percent_matches_df_with_reserved_blocks) ... ok
+test_load_per_core (test_resource_check.SnapshotMathTests.test_load_per_core) ... ok
+test_memory_fallback_treats_cache_as_available (test_resource_check.SnapshotMathTests.test_memory_fallback_treats_cache_as_available) ... ok
+test_memory_uses_memavailable (test_resource_check.SnapshotMathTests.test_memory_uses_memavailable) ... ok
+test_missing_memtotal_is_an_error (test_resource_check.SnapshotMathTests.test_missing_memtotal_is_an_error) ... ok
+test_no_swap (test_resource_check.SnapshotMathTests.test_no_swap) ... ok
+test_unknown_cpu_count_falls_back_to_one (test_resource_check.SnapshotMathTests.test_unknown_cpu_count_falls_back_to_one) ... ok
+test_zero_size_filesystem (test_resource_check.SnapshotMathTests.test_zero_size_filesystem) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.019s
+
+OK
+
+############ 2. New test suite run against ORIGINAL v0.1 code (expected to fail: proves each regression test detects its bug)
+ERROR: test_output_write_failure_is_exit_2 (test_resource_check.CliTests.test_output_write_failure_is_exit_2)
+FAIL: test_json_output (test_resource_check.CliTests.test_json_output)
+FAIL: test_rejects_invalid_thresholds (test_resource_check.CliTests.test_rejects_invalid_thresholds) (argv=['--memory-warn', 'nan'])
+FAIL: test_rejects_invalid_thresholds (test_resource_check.CliTests.test_rejects_invalid_thresholds) (argv=['--disk-warn', 'inf'])
+FAIL: test_rejects_invalid_thresholds (test_resource_check.CliTests.test_rejects_invalid_thresholds) (argv=['--load-warn', 'nan'])
+FAIL: test_rejects_invalid_thresholds (test_resource_check.CliTests.test_rejects_invalid_thresholds) (argv=['--disk-warn', '101'])
+FAIL: test_text_output_without_swap_or_size (test_resource_check.CliTests.test_text_output_without_swap_or_size)
+FAIL: test_available_never_exceeds_total (test_resource_check.SnapshotMathTests.test_available_never_exceeds_total)
+FAIL: test_disk_percent_matches_df_with_reserved_blocks (test_resource_check.SnapshotMathTests.test_disk_percent_matches_df_with_reserved_blocks)
+FAIL: test_memory_fallback_treats_cache_as_available (test_resource_check.SnapshotMathTests.test_memory_fallback_treats_cache_as_available)
+FAIL: test_missing_memtotal_is_an_error (test_resource_check.SnapshotMathTests.test_missing_memtotal_is_an_error)
+Ran 27 tests in 0.019s
+FAILED (failures=10, errors=1)
+
+############ 3. Live-system cross-checks, CLI behaviour, syscall trace and footprint
+== Disk: tool used_percent vs df Use% (df rounds up to whole %)
+/                  df=29%   tool=29.0
+/opt/claude-code   df=93%   tool=92.5
+/opt/env-runner    df=68%   tool=67.0
+/dev/shm           df=1%    tool=0.0
+
+== Memory: tool vs free -b (sampled back to back)
+free:  total=8412139520 available=7941427200 -> used%=5.6
+tool:  total=8412139520 available=7941427200 -> used%=5.6
+
+== CPU/load: tool vs nproc and /proc/loadavg
+nproc=2  /proc/loadavg=0.07 0.03 0.00
+tool: cores=2 load=[0.07, 0.03, 0.0] per_core=0.04
+
+== Text output (fixed)
+vm | 2026-11-12T17:52:42.484640+00:00 | OK
+CPU: 2 cores; load 1/5/15: [0.07, 0.03, 0.0]; load/core: 0.04
+Memory: 5.6% used
+Swap: none configured
+Disk: 29.0% used (/)
+exit=0
+
+== Pseudo-filesystem
+Swap: none configured
+Disk: n/a (/proc)
+
+== Rejected thresholds
+resource_check.py: error: warning thresholds must be finite, non-negative numbers
+resource_check.py: error: warning thresholds must be finite, non-negative numbers
+resource_check.py: error: --memory-warn and --disk-warn are percentages (0-100)
+
+== stdout to a full device (/dev/full)
+resource-check: cannot write output: [Errno 28] No space left on device
+exit=2
+
+== Missing path
+resource-check: [Errno 2] No such file or directory: '/does/not/exist'
+exit=2
+
+== Rejected thresholds: exit codes (argparse usage error = 2)
+  --memory-warn nan -> exit=2
+  --disk-warn inf -> exit=2
+  --load-warn nan -> exit=2
+  --disk-warn 101 -> exit=2
+  --load-warn -1 -> exit=2
+
+== Footprint
+  /usr/bin/python3.12: peak RSS 13.0 MiB (max over runs so far), mean wall 37 ms over 10 runs
+  /usr/bin/python3.13: peak RSS 13.0 MiB (max over runs so far), mean wall 31 ms over 10 runs
+
+== Unprivileged user (nobody)
+Memory: 5.6% used
+Swap: none configured
+Disk: 29.0% used (/)
+exit=0
+
+== strace summary (python3 -I -B resource_check.py --json)
+write/create opens: 0   sockets/connects: 0   execve: 1 (the interpreter itself)   unlink/rename/mkdir/chmod/truncate: 0
+
+== Static checks
+py_compile: OK
+pyflakes: exit 0 (0 = no findings)
