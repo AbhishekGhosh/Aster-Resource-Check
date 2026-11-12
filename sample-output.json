@@ -1,0 +1,32 @@
+{
+  "timestamp_utc": "2026-11-12T17:53:18.590706+00:00",
+  "hostname": "vm",
+  "cpu": {
+    "logical_cores": 2,
+    "load_average_1_5_15": [
+      0.11,
+      0.04,
+      0.01
+    ],
+    "load_1_per_core": 0.05
+  },
+  "memory": {
+    "total_bytes": 8412139520,
+    "available_bytes": 7942692864,
+    "used_percent": 5.6
+  },
+  "swap": {
+    "total_bytes": 0,
+    "used_bytes": 0,
+    "used_percent": null
+  },
+  "disk": {
+    "path": "/",
+    "total_bytes": 270553174016,
+    "used_bytes": 13042388992,
+    "free_bytes": 31972220928,
+    "used_percent": 29.0
+  },
+  "warnings": [],
+  "status": "OK"
+}
